@@ -1,24 +1,20 @@
 <template>
  
    
+   
   <el-container>
  
   
   <el-header> <mymenu></mymenu></el-header>
+  <el-scrollbar height="800px">
   <el-main>
     <div>
     <router-view></router-view>
     </div>
   </el-main>
+  </el-scrollbar>
   <el-footer><webFooter></webFooter></el-footer>
   </el-container>
-
-
-
-
-
-
-
 
     
 </template>
@@ -28,6 +24,8 @@ import webFooter from './components/webStructure/webFooter.vue';
 import webHeader from './components/webStructure/webHeader.vue';
 import { computed, ref } from 'vue';
 import { RouterView } from 'vue-router';
+
+
 </script>
 
 <style>
@@ -156,5 +154,16 @@ width:100%;
 height:100%;		
 position:fixed;
 background-size:100% 100%;
+}
+.scrollbar-demo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 4px;
+  background: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
 }
 </style>

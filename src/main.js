@@ -8,8 +8,18 @@ import 'element-plus/dist/index.css'
 import App from './App.vue'
 import router from './router'
 import Element from 'element-plus' 
+//动画库
+import 'animate.css'
+import { kinesisPlugin } from '@letstri/kinesis';
 const app = createApp(App)
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import 'highlight.js/styles/stackoverflow-light.css'
+import 'highlight.js/lib/common'
+import hljsVuePlugin from '@highlightjs/vue-plugin'
+
+// 引入wangeditor的css样式
+import '@wangeditor/editor/dist/css/style.css'
+
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
@@ -18,4 +28,6 @@ app.use(Element)
 app.use(createPinia())
 app.use(router)
 app.use(ElementPlus)
+app.use(kinesisPlugin);
+app.use(hljsVuePlugin)
 app.mount('#app')
