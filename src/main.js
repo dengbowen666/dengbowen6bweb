@@ -1,4 +1,4 @@
-import './assets/iconfont/font.css'
+
 import '@/assets/app.css'
 import eventBus from '../plugins/eventBus'
 import { createApp } from 'vue'
@@ -15,10 +15,15 @@ const app = createApp(App)
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import 'highlight.js/styles/stackoverflow-light.css'
 import 'highlight.js/lib/common'
+import './assets/fonts/font.css'
 import hljsVuePlugin from '@highlightjs/vue-plugin'
 
 // 引入wangeditor的css样式
 import '@wangeditor/editor/dist/css/style.css'
+//看板娘
+import vueLive2d from 'vue-live2d'
+
+
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
@@ -30,4 +35,7 @@ app.use(router)
 app.use(ElementPlus)
 app.use(kinesisPlugin);
 app.use(hljsVuePlugin)
+
+
+
 app.mount('#app')

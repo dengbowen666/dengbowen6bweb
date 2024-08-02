@@ -10,10 +10,12 @@
   <el-main>
     <div>
     <router-view></router-view>
+    
     </div>
   </el-main>
   </el-scrollbar>
   <el-footer><webFooter></webFooter></el-footer>
+
   </el-container>
 
     
@@ -29,9 +31,7 @@ import { RouterView } from 'vue-router';
 </script>
 
 <style>
-.el-container{
-    background: #894a4a;
-}
+
 
 .btn {
     display: inline-block;
@@ -149,7 +149,7 @@ import { RouterView } from 'vue-router';
     
 }
 .el-container{
-    background:url("src/assets/img/R.jpg");
+    background:url("src/assets/img/edge_background.jpg");
 width:100%;			
 height:100%;		
 position:fixed;
@@ -166,4 +166,5 @@ background-size:100% 100%;
   background: var(--el-color-primary-light-9);
   color: var(--el-color-primary);
 }
+
 </style>

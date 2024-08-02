@@ -1,15 +1,17 @@
 <template>
-  <KinesisContainer style="display:flex;
-flex-direction:column;
-">
-      <KinesisElement :strength="30" style="margin:auto">欢迎来到邓博文的个人博客</KinesisElement>
+  <KinesisContainer 
+  
+  style="display:flex;
+flex-direction:column;"
+>
+      <KinesisElement  :strength="30" style="margin:auto;font-family:阿里妈妈东方大楷 Regular;font-size:40px;">欢迎来到为拉妮变成狼人模样的个人博客</KinesisElement>
 
-      <el-divider style="margin:20px;"></el-divider>
-      <KinesisElement  style="margin:auto">黑发不知勤学早，</KinesisElement>
-      <KinesisElement  style="margin:auto">白首方悔读书迟！</KinesisElement>
+      <el-divider style="margin:auto;width: 600px;margin-top: 20px;margin-bottom: 20px;"><el-icon style="background-color: aquamarine;"><Star /></el-icon></el-divider>
+      <KinesisElement  style="margin:auto;font-family:阿里妈妈东方大楷 Regular;font-size:20px;color: rgb(137, 163, 154);">黑发不知勤学早，</KinesisElement>
+      <KinesisElement  style="margin:auto;font-family:阿里妈妈东方大楷 Regular;font-size:30px;color: rgb(189, 212, 204);">白首方悔读书迟！</KinesisElement>
     </KinesisContainer>
 
-  <div style="margin-top: 200px;"></div>
+  <div  style="margin-top: 160px;"></div>
   <el-carousel :interval="4000" type="card" height="340px" style="margin-left:145px ;margin-right: 145px;">
     <el-carousel-item v-for="item in carouseData" :key="item">
           <img :src="item.url" alt="" height="340px"/>
@@ -22,7 +24,7 @@ flex-direction:column;
 import {ref} from 'vue'
 const carouseData = ref([
 {url:'src/assets/img/轮播图/firewoman.jpg'},
-{ url: 'src/assets/img/轮播图/golden.jpg' },
+{ url: 'src/assets/img/轮播图/R.jpg' },
 { url: 'src/assets/img/轮播图/tree.jpg' },
 ])
 
@@ -52,4 +54,5 @@ const carouseData = ref([
      max-width: 100%;
     max-height: 100%;
 }
+
 </style>

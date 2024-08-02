@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "东方大楷";
+    font-weight: 400;
+    src: url("fZrFwbvZr8JE.woff") format("woff2"),
+        url("fZrFwbvZr8JE.woff2") format("woff");
+    font-display: swap;
+}

@@ -24,7 +24,7 @@
             >
             <div>
                 {{stage.details}}
-            
+            <highlightjs language="JavaScript" :autodetect="false" :code="code"></highlightjs>
             <el-button type="primary">详情</el-button>
             </div>
             </el-collapse-item>
@@ -41,6 +41,47 @@
           已经到底了~
         </el-divider>
     </div>
+    <!--
+    <el-carousel :interval="4000" type="card" height="340px" style="margin-left:145px ;margin-right: 145px;">
+        <el-carousel-item v-for="stage in stages" :key="stage.name">
+                  <transition 
+         name="animate__animated animate__bounce" 
+         appear
+         enter-active-class="animate__lightSpeedInRight"
+         >
+                <h2>{{ stage.name }}</h2>
+            </transition>
+        
+        <el-collapse 
+        v-model="activeNames" 
+        @change="handleChange"
+        style="margin-right: 0px"
+        >
+                <el-collapse-item 
+                :title="stage.description"
+                style="margin-left: 20px;margin-right: 20px"
+                >
+                <div>
+                    {{ stage.details }}
+                <highlightjs language="JavaScript" :autodetect="false" :code="code"></highlightjs>
+                <el-button type="primary">详情</el-button>
+                </div>
+                </el-collapse-item>
+                </el-collapse>
+          
+                <ul>
+                    <li v-for="resource in stage.resources" :key="resource.name">
+                        <el-link href="resource.url" type="primary">{{ resource.name }}</el-link>
+                    </li>
+                </ul>
+            
+            
+            </el-carousel-item>
+      </el-carousel>
+
+
+-->
+   
 </template>
 
 <script setup>
@@ -49,7 +90,7 @@ const activeNames = ref(['1'])
 const handleChange = (val) => {
     console.log(val)
 }
-
+let code = `let a = 1\nconsole.log(a)`
 const stages = ref([
     {
         name: 'HTML',
@@ -58,7 +99,9 @@ const stages = ref([
             { name: 'W3Schools HTML教程', url: 'https://www.w3schools.com/html/&#39'  },
                        
         ],
-       details:'超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。'
+        details: '超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。',
+        
+       
     },
     {
         name: 'CSS',
