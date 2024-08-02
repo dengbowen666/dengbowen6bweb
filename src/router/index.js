@@ -3,13 +3,16 @@ import mycalendar from '../components/tools/mycalendar.vue'
 import myset from '../components/tools/myset.vue'
 import myTodolist from '../components/tools/myTodolist/myTodolist.vue'
 import myhomepage from '../components/webStructure/myhomepage.vue'
+import studyGuide from '../components/study/studyGuide.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+  
     {
       path: '/myhomepage',
      
-      component: myhomepage
+      component: myhomepage,
+     
     },
     {
       path: '/mycalendar.vue',
@@ -27,7 +30,11 @@ const router = createRouter({
       component: myset,
       
       
-    }
+    },
+    {
+      path: '/studyGuide',
+      component:studyGuide
+     }
   ]
 })
 

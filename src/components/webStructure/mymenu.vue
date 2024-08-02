@@ -29,27 +29,42 @@
                 <el-menu-item index="3-4-3">item three</el-menu-item>
             </el-sub-menu>
         </el-sub-menu>
-        <el-menu-item index="4" disabled>Info</el-menu-item>
-        
+        <el-sub-menu index="4" >
+    <template #title><span class="title-text">学习之路</span></template>
+                <el-menu-item index="/studyGuide">前端概览</el-menu-item>
+                <el-sub-menu index="3-2">
+                <template #title></template>
+                <el-menu-item index="3-3">item three</el-menu-item>
+                </el-sub-menu>
+             </el-sub-menu>       
+
+
+
+
+
+
+     
+         
          <el-menu-item index="4" ><el-icon><Notebook /></el-icon>我的博文</el-menu-item>
          
          <el-menu-item index="4" ><el-icon><User /></el-icon>个人介绍</el-menu-item>
-         <div style="margin: 0 150px;"></div>
-         <el-menu-item > <el-input
+         
+         <el-menu-item index="4"> <el-input
             v-model="input"
             style="width: 240px;margin: auto;"
             placeholder="输入关键词搜索"
             clearable
-            size='small'
-
-              />
-            搜索<el-icon><Search /></el-icon>
+            size='small'/>
+            <el-icon><Search /></el-icon>
             </el-menu-item>
          
        
-
+  
          <el-menu-item index="/myset"><span class="title-text"><el-icon><Operation /></el-icon>设置</span></el-menu-item>
+     <el-menu-item disabled ><span>为拉妮变成狼人模样</span></el-menu-item>
+    <span>为拉妮变成狼人模样</span>
     </el-menu>
+  
 </template>
 
 <script lang="ts" setup>

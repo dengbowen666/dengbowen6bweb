@@ -4,6 +4,7 @@
           <img :src="item.url" alt="" height="340px"/>
         </el-carousel-item>
   </el-carousel>
+
 </template>
 
 <script setup>
