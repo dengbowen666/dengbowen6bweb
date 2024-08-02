@@ -1,11 +1,20 @@
 <template>
-  <el-carousel :interval="4000" type="card" height="200px">
-    <el-carousel-item v-for="item in 6" :key="item">
-      <h3 text="2xl" justify="center">{{ item }}</h3>
-    </el-carousel-item>
+  <el-carousel :interval="4000" type="card" height="340px" style="margin-left:145px ;margin-right: 145px;">
+    <el-carousel-item v-for="item in carouseData" :key="item">
+          <img :src="item.url" alt="" height="340px"/>
+        </el-carousel-item>
   </el-carousel>
 </template>
 
+<script setup>
+import {ref} from 'vue'
+const carouseData = ref([
+{url:'src/assets/img/轮播图/firewoman.jpg'},
+{ url: 'src/assets/img/轮播图/golden.jpg' },
+{ url: 'src/assets/img/轮播图/tree.jpg' },
+])
+
+</script>
 <style scoped>
 .el-carousel__item h3 {
   color: #475669;
@@ -21,5 +30,14 @@
 
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
+}
+
+
+.img {
+    width: 100%; /* 图片宽度填满容器宽度 */
+    height: 100%; /* 图片高度填满容器高度 */
+    object-fit: contain ;
+     max-width: 100%;
+    max-height: 100%;
 }
 </style>
