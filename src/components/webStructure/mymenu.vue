@@ -1,11 +1,12 @@
 <template>
-    <el-menu ellipsis class="el-menu-popper-demo" mode="vertical" :popper-offset="16" style="background-color:rgb(153, 59, 59);max-width: 100%;"
+    <el-menu ellipsis class="el-menu-popper-demo" mode="horizontal" :popper-offset="16" style="background-color:rgb(1, 1, 20);max-width: 100%;
+    "
     router="true"
     
     >
-        <el-menu-item index="/home"><el-icon><House /></el-icon>首页</el-menu-item>
+        <el-menu-item index="/myhomepage"><el-icon><House /></el-icon>首页</el-menu-item>
         <el-sub-menu index="2">
-            <template #title><el-icon><Menu /></el-icon>工作台</template>
+            <template #title><span style="color:rgb(124, 161, 229);"><el-icon><Menu /></el-icon>工作台</span></template>
             <el-menu-item index="/myTodolist.vue">todolist</el-menu-item>
             <el-menu-item index="2-2">item two</el-menu-item>
             <el-menu-item index="2-3">item three</el-menu-item>
@@ -17,7 +18,7 @@
             </el-sub-menu>
         </el-sub-menu>
         <el-sub-menu index="3" :popper-offset="8">
-            <template #title><el-icon><Tools /></el-icon>常用工具</template>
+            <template #title><span class="title-text"><el-icon><Tools /></el-icon>常用工具</span></template>
             <el-menu-item index="/mycalendar.vue">日历</el-menu-item>
             <el-menu-item index="3-2">item two</el-menu-item>
             <el-menu-item index="3-3">item three</el-menu-item>
@@ -29,11 +30,38 @@
             </el-sub-menu>
         </el-sub-menu>
         <el-menu-item index="4" disabled>Info</el-menu-item>
-        <el-menu-item index="/myset"><el-icon><Operation /></el-icon>设置</el-menu-item>
+        
+         <el-menu-item index="4" ><el-icon><Notebook /></el-icon>我的博文</el-menu-item>
+         
+         <el-menu-item index="4" ><el-icon><User /></el-icon>个人介绍</el-menu-item>
+         <div style="margin: 0 150px;"></div>
+         <el-menu-item > <el-input
+            v-model="input"
+            style="width: 240px;margin: auto;"
+            placeholder="输入关键词搜索"
+            clearable
+            size='small'
+
+              />
+            搜索<el-icon><Search /></el-icon>
+            </el-menu-item>
+         
+       
+
+         <el-menu-item index="/myset"><span class="title-text"><el-icon><Operation /></el-icon>设置</span></el-menu-item>
     </el-menu>
 </template>
 
-<script lang="ts" setup></script>
-<style>
-
+<script lang="ts" setup>
+import {ref} from 'vue'
+const input = ref('')
+</script>
+<style scoped>
+.el-menu-item{
+   color: rgb(124, 161, 229)!important
+}
+.title-text{
+    color:rgb(124, 161, 229)
+}
 </style>
+

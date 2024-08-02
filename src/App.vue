@@ -2,9 +2,9 @@
  
    
   <el-container>
-  <el-aside width="150px"><mymenu></mymenu></el-aside>
-  <el-container>
-  <el-header><webHeader></webHeader></el-header>
+ 
+  
+  <el-header> <mymenu></mymenu></el-header>
   <el-main>
     <router-view></router-view>
   </el-main>
@@ -16,7 +16,7 @@
 
 
 
-  </el-container>
+
 
     
 </template>
@@ -147,5 +147,12 @@ import { RouterView } from 'vue-router';
     display: block;
     width: 1000px;
     
+}
+.el-container{
+    background:url("src/assets/img/R.jpg");
+width:100%;			
+height:100%;		
+position:fixed;
+background-size:100% 100%;
 }
 </style>
