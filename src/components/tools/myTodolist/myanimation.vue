@@ -3,7 +3,7 @@
     
  <transition 
  name="animate__animated animate__bounce" 
- :appear="true"
+ appear
  enter-active-class="animate__lightSpeedInRight"
  >
 <h1 v-show="show" style="color: chocolate;size: 20px;font-weight: bold;font-style: italic;letter-spacing: 2px;" >这是我的待办清单</h1>

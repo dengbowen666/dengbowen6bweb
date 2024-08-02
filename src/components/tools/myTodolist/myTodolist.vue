@@ -4,7 +4,7 @@ import { onMounted, ref, watch } from 'vue';
 import myheader from '@/components/tools/myTodolist/myheader.vue'
 import mylist from '@/components/tools/myTodolist/mylist.vue';
 import myfooter from '@/components/tools/myTodolist/myfooter.vue';
-import myanimation from '@/components/tools/myTodolist/myTodolist.vue';
+import myanimation from './myanimation.vue';
 import { RouterView } from 'vue-router'
 import { inject } from 'vue';
 
@@ -92,11 +92,11 @@ watch(() => ToDos.value, (value) => {
             <div class="todo-wrap">
                 <div style="margin-bottom: 5px
                     ;">
-                    <myanimation></myanimation>
-                </div>
-                <myheader @addTodo="addTodo"></myheader>
-                <mylist :todos="ToDos" :deleteTodo="deleteTodo"></mylist>
-                <myfooter :todos="ToDos" :deleteDone="deleteDone"></myfooter>
+                        <myanimation></myanimation>
+                    </div>
+                     <myheader @addTodo="addTodo"></myheader>
+                    <mylist :todos="ToDos" :deleteTodo="deleteTodo"></mylist>
+                    <myfooter :todos="ToDos" :deleteDone="deleteDone"></myfooter>
             </div>
         </div>
     </div>

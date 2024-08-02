@@ -28,7 +28,7 @@ import { computed, ref } from 'vue';
 import { RouterView } from 'vue-router';
 </script>
 
-<style scoped>
+<style>
 .el-container{
     background: #894a4a;
 }
