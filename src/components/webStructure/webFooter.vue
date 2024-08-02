@@ -13,6 +13,7 @@
 <style>
 .font-text{
   font-family: "阿里妈妈东方大楷 Regular";
+  color: aqua;
 }
 
 </style>

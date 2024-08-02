@@ -6,7 +6,9 @@
   
   <el-header> <mymenu></mymenu></el-header>
   <el-main>
+    <div style="margin-left: 100px;margin-right: 100px;">
     <router-view></router-view>
+    </div>
   </el-main>
   <el-footer><webFooter></webFooter></el-footer>
   </el-container>
