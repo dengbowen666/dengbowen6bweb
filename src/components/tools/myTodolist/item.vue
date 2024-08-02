@@ -3,7 +3,7 @@
     <li>
       <label>
         <input type="checkbox" v-model="todoObj.done" />
-        <span v-show="todoObj.isEdit == false" style="color: rgb(146, 148, 150);"> {{ todoObj.title }}</span>
+        <span v-show="todoObj.isEdit == false" style="color: rgb(198, 225, 252);"> {{ todoObj.title }}</span>
         <input v-show="todoObj.isEdit == true" type="text" v-model="editTitle" @blur="edit(todoObj)" ref="input">
 
       </label>
@@ -126,7 +126,7 @@ li:last-child {
 }
 
 li:hover {
-  color: rgb(210, 109, 177);
+  color: rgb(174, 21, 123);
 }
 
 /* 默认button不显示，鼠标悬停才出现*/

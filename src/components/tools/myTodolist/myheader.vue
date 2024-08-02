@@ -38,7 +38,7 @@ const add = () => {
 <style scoped>   
 /*header*/
 .todo-header input {
-  width: 680px;
+  width: 660px;
   height: 28px;
   font-size: 14px;
   border: 1px solid #ccc;

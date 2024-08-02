@@ -90,8 +90,7 @@ watch(() => ToDos.value, (value) => {
     <div>
         <div class="todo-container">
             <div class="todo-wrap">
-                <div style="margin-bottom: 5px
-                    ;">
+                <div style="margin-bottom: 5px;">
                         <myanimation></myanimation>
                     </div>
                      <myheader @addTodo="addTodo"></myheader>

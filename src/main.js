@@ -1,4 +1,4 @@
-
+import './assets/iconfont/font.css'
 import '@/assets/app.css'
 import eventBus from '../plugins/eventBus'
 import { createApp } from 'vue'
