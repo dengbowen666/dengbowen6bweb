@@ -4,7 +4,7 @@
     router="true"
     
     >
-        <el-menu-item index="/myhomepage"><el-icon><House /></el-icon>首页</el-menu-item>
+        <el-menu-item index="/"><el-icon><House /></el-icon>首页</el-menu-item>
         <el-sub-menu index="2">
             <template #title><span style="color:rgb(124, 161, 229);"><el-icon><Menu /></el-icon>作品</span></template>
             <el-menu-item index="/myTodolist.vue">todolist</el-menu-item>

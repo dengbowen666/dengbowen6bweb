@@ -1,33 +1,12 @@
 <template>
- 
+ <myindex></myindex>
    
    
-  <el-container>
- 
   
-  <el-header> <mymenu></mymenu></el-header>
-  <el-scrollbar height="800px">
-  <el-main >
-    <div>
-    <router-view></router-view>
-    
-    </div>
-  </el-main>
-  </el-scrollbar>
-  <el-footer>
-    
-
-    <webFooter></webFooter></el-footer>
-  
-  </el-container>
- 
     
 </template>
 <script  setup >
-import mymenu from './components/webStructure/mymenu.vue';
-import webFooter from './components/webStructure/webFooter.vue';
-import { computed, ref } from 'vue';
-import { RouterView } from 'vue-router';
+import myindex from '@/components/webStructure/myindex.vue'
 
 
 

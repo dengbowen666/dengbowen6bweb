@@ -11,7 +11,7 @@ flex-direction:column;"
       <KinesisElement  style="margin:auto;font-family:阿里妈妈东方大楷 Regular;font-size:30px;color: rgb(189, 212, 204);">白首方悔读书迟！</KinesisElement>
     </KinesisContainer>
 
-  <div  style="margin-top: 160px;"> <router-link to="/myhomepage" style="margin: auto;">
+  <div  style="margin-top: 160px;"> <router-link to="/" style="margin: auto;">
     日历
   </router-link></div>
 
