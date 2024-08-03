@@ -5,14 +5,14 @@ import myTodolist from '../components/tools/myTodolist/myTodolist.vue'
 import myhomepage from '../components/webStructure/myhomepage.vue'
 import studyGuide from '../components/study/studyGuide.vue'
 import mygame from '../components/game/mygame.vue'
-import singlegame from '../components/game/singlegame.vue'
+
+import mycss from '../components/study/studys/mycss/mycss.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-  
+    
     {
       path: '/myhomepage',
-     
       component: myhomepage,
      
     },
@@ -35,20 +35,19 @@ const router = createRouter({
     },
     {
       path: '/studyGuide',
-      component:studyGuide
+      component: studyGuide
+      ,
+      children:[{
+        path: '/mycss',
+        component:mycss
+      }]
     },
     {path:'/mygame',
-      component: mygame,
+      component: mygame
      
-      children: {
-        path: 'singlegame',
-        component:singlegame
-        
-
-
     }
 
-    }
+    
   ]
 })
 

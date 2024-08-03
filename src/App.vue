@@ -14,21 +14,28 @@
     </div>
   </el-main>
   </el-scrollbar>
-  <el-footer><webFooter></webFooter></el-footer>
+  <el-footer>
+    
 
+    <webFooter></webFooter></el-footer>
+  
   </el-container>
-
+ 
     
 </template>
 <script  setup >
 import mymenu from './components/webStructure/mymenu.vue';
 import webFooter from './components/webStructure/webFooter.vue';
-import webHeader from './components/webStructure/webHeader.vue';
 import { computed, ref } from 'vue';
 import { RouterView } from 'vue-router';
 
 
+
+
 </script>
+
+
+
 
 <style>
 

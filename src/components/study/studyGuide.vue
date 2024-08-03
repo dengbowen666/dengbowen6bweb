@@ -1,5 +1,6 @@
 <template>
     <div class="learning-path">
+        
         <div v-for="stage in stages" 
         :key="stage.name" 
         class="stage"
@@ -24,9 +25,14 @@
             >
             <div>
                 {{stage.details}}
-            <highlightjs language="JavaScript" :autodetect="false" :code="code"></highlightjs>
-            <el-button type="primary">详情</el-button>
+           <!-- <highlightjs language="JavaScript" :autodetect="false" :code="stage.code"></highlightjs>-->
+            <router-link :to="stage.more">
+            <el-button v-show="stage.isMore"  @click="stage.isMore=!stage.isMore">更多</el-button>
+            </router-link>
+            <el-button v-show="!stage.isMore" @click="stage.isMore = !stage.isMore">收起</el-button>
+            <router-view ></router-view>
             </div>
+            
             </el-collapse-item>
             </el-collapse>
           
@@ -40,6 +46,7 @@
         <el-divider>
           已经到底了~
         </el-divider>
+          
     </div>
     <!--
     <el-carousel :interval="4000" type="card" height="340px" style="margin-left:145px ;margin-right: 145px;">
@@ -86,11 +93,12 @@
 
 <script setup>
 import { ref } from 'vue'
+import mycss from './studys/mycss/mycss.vue';
 const activeNames = ref(['1'])
 const handleChange = (val) => {
     console.log(val)
 }
-let code = `let a = 1\nconsole.log(a)`
+
 const stages = ref([
     {
         name: 'HTML',
@@ -109,7 +117,9 @@ const stages = ref([
         resources: [
             { name: 'W3Schools CSS教程', url: 'https://www.w3schools.com/css/&#39' }
         ],
-         details: '层叠样式表（Cascading Style Sheets，缩写为 CSS）是一种样式表语言，用来描述 HTML 或 XML（包括如 SVG、MathML 或 XHTML 之类的 XML 分支语言）文档的呈现方式。CSS 描述了在屏幕、纸质、音频等其他媒体上的元素应该如何被渲染的问题。'
+        details: '层叠样式表（Cascading Style Sheets，缩写为 CSS）是一种样式表语言，用来描述 HTML 或 XML（包括如 SVG、MathML 或 XHTML 之类的 XML 分支语言）文档的呈现方式。CSS 描述了在屏幕、纸质、音频等其他媒体上的元素应该如何被渲染的问题。',
+        more: "/mycss",
+        isMore: ref(true),
     },
     {
         name: 'JavaScript',
@@ -135,6 +145,7 @@ const stages = ref([
         ]
     }
 ])
+
 </script>
 
 
