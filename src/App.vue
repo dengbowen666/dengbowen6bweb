@@ -7,7 +7,7 @@
   
   <el-header> <mymenu></mymenu></el-header>
   <el-scrollbar height="800px">
-  <el-main>
+  <el-main >
     <div>
     <router-view></router-view>
     
@@ -149,11 +149,13 @@ import { RouterView } from 'vue-router';
     
 }
 .el-container{
-    background:url("src/assets/img/edge_background.jpg");
-width:100%;			
-height:100%;		
-position:fixed;
-background-size:100% 100%;
+   width:100%;			
+  height:100%;		
+  position:fixed;
+  
+  background:url("src/assets/img/edge_background.jpg");
+  background-size:100% 100%;
+   
 }
 .scrollbar-demo-item {
   display: flex;

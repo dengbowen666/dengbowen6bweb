@@ -4,6 +4,8 @@ import myset from '../components/tools/myset.vue'
 import myTodolist from '../components/tools/myTodolist/myTodolist.vue'
 import myhomepage from '../components/webStructure/myhomepage.vue'
 import studyGuide from '../components/study/studyGuide.vue'
+import mygame from '../components/game/mygame.vue'
+import singlegame from '../components/game/singlegame.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -34,7 +36,19 @@ const router = createRouter({
     {
       path: '/studyGuide',
       component:studyGuide
-     }
+    },
+    {path:'/mygame',
+      component: mygame,
+     
+      children: {
+        path: 'singlegame',
+        component:singlegame
+        
+
+
+    }
+
+    }
   ]
 })
 

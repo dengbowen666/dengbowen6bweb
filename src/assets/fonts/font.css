@@ -5,3 +5,7 @@
         url("fZrFwbvZr8JE.woff2") format("woff");
     font-display: swap;
 }
+@font-face {
+    font-family: "白路棒棒手写体";
+    src: url("白路棒棒手写体.ttf") 
+}

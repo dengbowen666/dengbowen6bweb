@@ -154,7 +154,7 @@ body {
 }
 
 .stage {
-    background: white;
+    background: rgba(254, 254, 254, 0.952);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -163,14 +163,15 @@ body {
 }
 
 .stage:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.1);
+
 }
 
 .stage h2 {
     font-size: 1.5em;
     margin: 0;
     padding: 10px;
-    background: #007bff;
+    background: #1c0abbbb;
     color: white;
     border-radius: 8px 8px 0 0;
 }

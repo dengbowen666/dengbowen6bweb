@@ -39,7 +39,7 @@
              </el-sub-menu>       
 
 
-        <el-menu-item index="3-4-1"><el-icon><SwitchFilled /></el-icon>游戏</el-menu-item>
+        <el-menu-item index="/mygame"><el-icon><SwitchFilled /></el-icon>游戏</el-menu-item>
 
 
 
