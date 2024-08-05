@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory,createWebHashHistory } from 'vue-router'
 import mycalendar from '../components/tools/mycalendar.vue'
 import myset from '../components/tools/myset.vue'
 import myTodolist from '../components/tools/myTodolist/myTodolist.vue'
@@ -8,9 +8,9 @@ import mygame from '../components/game/mygame.vue'
 import myindex from '../components/webStructure/myindex.vue'
 import mycss from '../components/study/studys/mycss/mycss.vue'
 const router = createRouter({
-  //base: '/',
-  history: createWebHistory(),
-
+  
+  //history: createWebHistory(),
+history:createWebHashHistory(),
   routes: [
   
     {
