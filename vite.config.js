@@ -13,6 +13,7 @@ export default defineConfig({
   //publicPath: process.env.NODE_ENV === 'production'
   //  ? '/dengbowen6bweb/'
   //  : '/',
+  
   plugins: [
     vue(),
     AutoImport({
@@ -21,6 +22,8 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
     }),
+    
+    
   ],
   resolve: {
     alias: {
@@ -29,6 +32,7 @@ export default defineConfig({
   },
    	build: {
         chunkSizeWarningLimit: 1500,
+        assetsInclude: ['**/*.png', '**  /*.jpg', '**/*.gif', '**  /*.svg'],
         rollupOptions: {
             output: {
                 manualChunks(id) {
