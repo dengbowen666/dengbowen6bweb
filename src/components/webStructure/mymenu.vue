@@ -1,7 +1,7 @@
 <template>
     <el-menu ellipsis class="el-menu-popper-demo" mode="horizontal" :popper-offset="16" style="background-color:rgb(1, 1, 20);max-width: 100%;
-    "
-    router="true"
+   "
+    router="true" 
     
     >
         <el-menu-item index="/"><el-icon><House /></el-icon>首页</el-menu-item>

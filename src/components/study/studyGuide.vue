@@ -143,6 +143,10 @@ const stages = ref([
         resources: [
             { name: 'Vue.js官方文档', url: 'https://vuepress.vuejs.org/zh/' }
         ]
+    },
+    {
+        name: 'Slidev',
+        description:'为开发者打造的演示文稿工具'
     }
 ])
 
