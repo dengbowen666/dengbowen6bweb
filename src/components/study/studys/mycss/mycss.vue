@@ -6,7 +6,8 @@
 <p>第二段</p>
 <br/>
 <span><dd>ss</dd></span>
-token设置repo
+token设置repo 解决
+但是新问题是 本地运行直接用上了github托管的那个域名，图片也不能显示出来
 
 
 
