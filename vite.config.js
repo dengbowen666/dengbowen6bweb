@@ -9,10 +9,10 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
- // base: '/dengbowen6bweb/',
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/dengbowen6bweb/'
-    : '/',
+  publicPath: './',
+  //publicPath: process.env.NODE_ENV === 'production'
+  //  ? '/dengbowen6bweb/'
+  //  : '/',
   plugins: [
     vue(),
     AutoImport({

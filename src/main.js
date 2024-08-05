@@ -21,7 +21,6 @@ import hljsVuePlugin from '@highlightjs/vue-plugin'
 // 引入wangeditor的css样式
 import '@wangeditor/editor/dist/css/style.css'
 //看板娘
-import vueLive2d from 'vue-live2d'
 
 
 
