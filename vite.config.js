@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -9,7 +8,10 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-   publicPath: './',
+   assetsDir: 'static',
+  parallel: false,
+  publicPath: './',
+
   //publicPath: process.env.NODE_ENV === 'production'
   //  ? '/dengbowen6bweb/'
   //  : '/',
@@ -32,7 +34,6 @@ export default defineConfig({
   },
    	build: {
         chunkSizeWarningLimit: 1500,
-        assetsInclude: ['**/*.png', '**  /*.jpg', '**/*.gif', '**  /*.svg'],
         rollupOptions: {
             output: {
                 manualChunks(id) {
