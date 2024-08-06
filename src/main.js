@@ -1,5 +1,5 @@
 
-import '@/assets/app.css'
+import './assets/app.css'
 import eventBus from '../plugins/eventBus'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -19,7 +19,7 @@ import './assets/fonts/font.css'
 import hljsVuePlugin from '@highlightjs/vue-plugin'
 
 // 引入wangeditor的css样式
-import '@wangeditor/editor/dist/css/style.css'
+//import './wangeditor/editor/dist/css/style.css'
 //看板娘
 
 
