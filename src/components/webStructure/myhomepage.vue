@@ -27,9 +27,9 @@ flex-direction:column;"
 <script setup>
 import {ref} from 'vue'
 const carouseData = ref([
-{url: './src/assets/img/Carousel/golden.jpg'},
-{ url: './src/assets/img/Carousel/R.jpg' },
-{ url: './src/assets/img/Carousel/firewoman.jpg' },
+{url: './public/img/Carousel/firewoman.jpg'},
+{ url: './public/img/Carousel/R.jpg' },
+{ url: './public/img/Carousel/tree.jpg' },
 ])
 
 </script>

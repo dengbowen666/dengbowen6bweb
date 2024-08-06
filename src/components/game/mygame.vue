@@ -48,7 +48,7 @@ import { computed, ref } from 'vue';
 const games = ref([
     {
         name: '只狼：影逝二度',
-        imag: './src/assets/img/game/Sekiro_art_(Re-uploaded).jpg',
+        imag: './public/img/game/Sekiro_art_(Re-uploaded).jpg',
         tags:['类魂','动作','手残必备'],
         rank: "壹",
     aniMate: "animate__animated animate__bounceInLeft",
@@ -57,7 +57,7 @@ const games = ref([
     {
 
         name: '艾尔登法环',
-        imag: './src/assets/img/game/Elden_Ring.png',
+        imag: './public/img/game/Elden_Ring.png',
         tags: ['魂', 'rpg', '开放世界'],
         rank: "二",
       aniMate: "animate__animated animate__bounceInLeft", 
@@ -65,7 +65,7 @@ const games = ref([
     },
     {
         name: '原神',
-        imag: './src/assets/img/game/genshit.jpg',
+        imag: './public/img/game/genshit.jpg',
         tags: ['二次元', '年度最佳', '3a'],
       rank: "三",
     aniMate: "animate__animated animate__bounceInLeft",
