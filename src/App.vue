@@ -139,7 +139,7 @@ import myindex from '@/components/webStructure/myindex.vue'
   height:100%;		
   position:fixed;
   
-  background:url('./public/img/background/edge_background.jpg');
+  background:url('../public/img/background/edge_background.jpg');
   background-size:100% 100%;
    
 }
