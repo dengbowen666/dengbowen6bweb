@@ -74,7 +74,7 @@ const games = ref([
     },
       {
         name: '明日方舟',
-        imag: './src/assets/img/game/Sekiro_art_(Re-uploaded).jpg',
+        imag: '',
         tags: ['二次元', '塔防', '足控'],
         aniMate: "animate__animated animate__bounceInLeft",
     delay: "animation-delay:0.7s"
@@ -83,7 +83,7 @@ const games = ref([
     {
 
         name: '只狼：影逝二度',
-        imag: './src/assets/img/游戏/Sekiro_art_(Re-uploaded).jpg',
+        imag: '',
       tags: ['类魂', '动作', '手残必备'],
         aniMate: "animate__animated animate__bounceInLeft",
     delay: "animation-delay:0.9s"

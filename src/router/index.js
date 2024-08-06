@@ -8,7 +8,7 @@ import mygame from '../components/game/mygame.vue'
 import myindex from '../components/webStructure/myindex.vue'
 import mycss from '../components/study/studys/mycss/mycss.vue'
 const router = createRouter({
-  
+  base: process.env.BASE_URL,
   //history: createWebHistory(),
 history:createWebHashHistory(),
   routes: [
