@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 .DS_Store
 
+dsit
 dist-ssr
 coverage
 *.local
